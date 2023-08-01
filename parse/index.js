@@ -1,6 +1,5 @@
 'use strict';
 
-// const pdfParse = require('pdf-parse');
 import { PdfReader } from 'pdfreader';
 
 import {parse} from './parse.js';

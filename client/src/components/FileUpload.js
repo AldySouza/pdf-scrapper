@@ -37,7 +37,6 @@ const FileUpload = () => {
 
         return response.data
       })
-      // aqui
       .then(extratedText => {
 
         const finalResult = `
@@ -71,7 +70,6 @@ const FileUpload = () => {
       });
       
       return res;
-      // Clear percentage
       
     } catch (err) {
       if (err.response.status === 500) {

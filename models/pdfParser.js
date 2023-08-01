@@ -48,4 +48,3 @@ const parsedPdf = (sequelize, DataTypes) => {
 
 export default parsedPdf
 
-// module.exports = parsedPdf

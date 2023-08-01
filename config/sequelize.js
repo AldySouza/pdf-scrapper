@@ -3,4 +3,3 @@ import * as config from './database.js';
 
 export const sequelize = new Sequelize(config)
 
-// module.exports = sequelize
