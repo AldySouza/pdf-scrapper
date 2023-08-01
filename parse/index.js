@@ -27,7 +27,3 @@ export class Parser {
   }
 
 }
-
-
-// if (!module.parent)
-//   require('./standalone.js');

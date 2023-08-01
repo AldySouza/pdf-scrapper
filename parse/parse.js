@@ -34,7 +34,7 @@ function parseBillPDF (pages) {
 
   // Declarative map of PDF data that we expect, based on Todd's structure
   const fields = {
-    n_cliente: { row: '9.272', index: 0 },
+    numero_cliente: { row: '9.272', index: 0 },
     mes: { row: '3.9219999999999997', index: 0 },
     vencimento: { row: '3.9219999999999997', index: 0 },
     energia_eletrica_unid: { row: '14.856', index: 1 },
@@ -65,7 +65,7 @@ function parseBillPDF (pages) {
 
         data[key] = val.trim().slice(0, 8);
 
-      } else if (key === 'n_cliente') {
+      } else if (key === 'numero_cliente') {
         val = page[field.row][field.index];
 
         data[key] = val.trim().slice(0, 10);

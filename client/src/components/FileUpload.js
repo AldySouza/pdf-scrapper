@@ -41,7 +41,7 @@ const FileUpload = () => {
       .then(extratedText => {
 
         const finalResult = `
-            Número do Cliente: ${extratedText.n_cliente},
+            Número do Cliente: ${extratedText.numero_cliente},
             Mês de Referência: ${extratedText.mes},
             Data de Vencimento: ${extratedText.vencimento},
             Energia Elétrica: 
