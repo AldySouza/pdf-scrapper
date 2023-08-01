@@ -13,6 +13,11 @@ db.sequelize.sync().then(() => {
     console.log('conectado com o db');
 })
 
+app.get('/', async (req, res) => {
+   const records = await db.pdfParser.findAll()
+   res.json(records)
+})
+
 app.post('/upload', (req, res) => {
     if(!req.files && !req.files.file) {
         res.status(400);
